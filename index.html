@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-color: cadetblue;
+      }
+      label {
+        display: block;
+        margin-bottom: 20px;
+      }
+      form {
+        max-width: 400px;
+        width: 100%;
+        margin: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <label>
+        First Name
+        <b id="firstNameText">Jane</b>
+        <input
+          type="text"
+          id="firstNameInput"
+          value="Jane"
+          style="display: none"
+        />
+      </label>
+      <label>
+        Last Name
+        <b id="lastNameText">Jacobs</b>
+        <input
+          type="text"
+          id="lastNameInput"
+          value="Jacobs"
+          style="display: none"
+        />
+      </label>
+      <button type="submit" id="editButton">Edit Profile</button>
+      <p><i id="helloText">Hello, Jane Jacobs</i></p>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
